@@ -2,11 +2,11 @@ const onBeforeEmployeeCreated=async (req)=>{
     const {DOB}=req.data
      const iage=_getAge(DOB);
          
-         if(iage>=40){
+         if(iage>=25){
              req.data.age=iage;
          }
          else{
-             req.error("Your age is under 40");
+             req.error("Your age is under 25");
          }
  
  };

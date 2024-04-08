@@ -18,7 +18,6 @@ entity Employee : cuid, managed {
   lName           : String;
   gender          : String;
   DOB             : Date;
-  age             : Integer;
   contractStarted : Date;
   email           : types.Email not null;
   phone           : types.PhoneNumber not null;
@@ -27,6 +26,7 @@ entity Employee : cuid, managed {
   salary          : Composition of Salary;
   department      : Association to Department;
   designation     : Association to Designation;
+  age             : Integer;
 }
 
 entity Address : cuid {
